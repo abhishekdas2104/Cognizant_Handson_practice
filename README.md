@@ -15,23 +15,6 @@
 
 ---
 
-## 🛠️ Tech Stack
-
-> *(Add the technologies you know!)*
-
-![Languages](https://skillicons.dev/icons?i=c,cpp,python,java,html,css,js)
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abhishekdas&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=abhishekdas&theme=tokyonight" alt="GitHub Streak" />
-</p>
-
----
 
 ## 📫 Connect with Me
 

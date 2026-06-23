@@ -1,9 +1,4 @@
 # Hi there, I'm Abhishek Das! 👋
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2196F3&center=true&vCenter=true&width=435&lines=B.Tech+CSE+Student;Lovely+Professional+University;Batch+of+2027;Always+learning+new+things!" alt="Typing SVG" />
-</p>
-
 ---
 
 ## 🎓 About Me

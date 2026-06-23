@@ -11,6 +11,7 @@
 - 🏫 **College:** Lovely Professional University (LPU)
 - 📚 **Program:** B.Tech — Computer Science & Engineering
 - 🎓 **Batch:** 2027
+- 🆔 Registration Number: 12317751
 - 📍 **Location:** Punjab, India
 
 ---

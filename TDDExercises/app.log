@@ -1,0 +1,20 @@
+18:50:52.827 [main] ERROR com.slf4jlogging.Exercise1 - This is an error message
+18:50:52.832 [main] WARN  com.slf4jlogging.Exercise1 - This is a warning message
+18:52:40.083 [main] ERROR com.slf4jlogging.Exercise1 - This is an error message
+18:52:40.086 [main] WARN  com.slf4jlogging.Exercise1 - This is a warning message
+18:52:52.949 [main] INFO  com.slf4jlogging.Exercise2 - User Alice has logged in
+18:52:52.954 [main] DEBUG com.slf4jlogging.Exercise2 - User age is 25
+18:52:52.954 [main] WARN  com.slf4jlogging.Exercise2 - User Alice has 3 failed login attempts
+18:52:52.954 [main] ERROR com.slf4jlogging.Exercise2 - User Alice account is locked after 5 attempts
+18:53:22.111 [main] INFO  com.slf4jlogging.Exercise2 - User Abhi has logged in
+18:53:22.115 [main] DEBUG com.slf4jlogging.Exercise2 - User age is 25
+18:53:22.115 [main] WARN  com.slf4jlogging.Exercise2 - User Abhi has 3 failed login attempts
+18:53:22.115 [main] ERROR com.slf4jlogging.Exercise2 - User Abhi account is locked after 5 attempts
+18:53:33.525 [main] DEBUG com.slf4jlogging.Exercise3 - This is a debug message
+18:53:33.528 [main] INFO  com.slf4jlogging.Exercise3 - This is an info message
+18:53:33.530 [main] WARN  com.slf4jlogging.Exercise3 - This is a warning message
+18:53:33.530 [main] ERROR com.slf4jlogging.Exercise3 - This is an error message
+18:53:41.465 [main] DEBUG com.slf4jlogging.Exercise3 - This is a debug message
+18:53:41.468 [main] INFO  com.slf4jlogging.Exercise3 - This is an info message
+18:53:41.468 [main] WARN  com.slf4jlogging.Exercise3 - This is a warning message
+18:53:41.468 [main] ERROR com.slf4jlogging.Exercise3 - This is an error message

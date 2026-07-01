@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="LibraryManagement (8)" />
+        <module name="LibraryManagement" />
+        <module name="LibraryManagement (6)" />
+        <module name="LibraryManagement (7)" />
+        <module name="LibraryManagement (4)" />
+        <module name="LibraryManagement (5)" />
+        <module name="LibraryManagement (2)" />
+        <module name="LibraryManagement (3)" />
+        <module name="LibraryManagement (1)" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LibraryManagement (8)" options="-parameters" />
+    </option>
+  </component>
+</project>

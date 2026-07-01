@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="deptIT" class="com.employee.Department">
+<property name="id" value="1" />
+<property name="name" value="IT" />
+</bean>
+<bean id="deptHR" class="com.employee.Department">
+<property name="id" value="2" />
+<property name="name" value="HR" />
+</bean>
+<bean id="deptFinance" class="com.employee.Department">
+<property name="id" value="3" />
+<property name="name" value="Finance" />
+</bean>
+<bean id="skillJava" class="com.employee.Skill">
+<property name="id" value="1" />
+<property name="name" value="Java" />
+</bean>
+<bean id="skillSpring" class="com.employee.Skill">
+<property name="id" value="2" />
+<property name="name" value="Spring" />
+</bean>
+<bean id="skillAngular" class="com.employee.Skill">
+<property name="id" value="3" />
+<property name="name" value="Angular" />
+</bean>
+<bean id="skillPython" class="com.employee.Skill">
+<property name="id" value="4" />
+<property name="name" value="Python" />
+</bean>
+<bean id="emp1" class="com.employee.Employee">
+<property name="id" value="1" />
+<property name="name" value="Rahul Sharma" />
+<property name="email" value="rahul@company.com" />
+<property name="department" ref="deptIT" />
+<property name="skills">
+<list>
+<ref bean="skillJava" />
+<ref bean="skillSpring" />
+</list>
+</property>
+</bean>
+<bean id="emp2" class="com.employee.Employee">
+<property name="id" value="2" />
+<property name="name" value="Shubham Patel" />
+<property name="email" value="shubham@company.com" />
+<property name="department" ref="deptHR" />
+<property name="skills">
+<list>
+<ref bean="skillAngular" />
+</list>
+</property>
+</bean>
+<bean id="emp3" class="com.employee.Employee">
+<property name="id" value="3" />
+<property name="name" value="Raj Kumar" />
+<property name="email" value="raj@company.com" />
+<property name="department" ref="deptIT" />
+<property name="skills">
+<list>
+<ref bean="skillJava" />
+<ref bean="skillAngular" />
+</list>
+</property>
+</bean>
+<bean id="emp4" class="com.employee.Employee">
+<property name="id" value="4" />
+<property name="name" value="Naman Singh" />
+<property name="email" value="naman@company.com" />
+<property name="department" ref="deptFinance" />
+<property name="skills">
+<list>
+<ref bean="skillPython" />
+</list>
+</property>
+</bean>
+<bean id="employeeList" class="java.util.ArrayList">
+<constructor-arg>
+<list>
+<ref bean="emp1" />
+<ref bean="emp2" />
+<ref bean="emp3" />
+<ref bean="emp4" />
+</list>
+</constructor-arg>
+</bean>
+<bean id="departmentList" class="java.util.ArrayList">
+<constructor-arg>
+<list>
+<ref bean="deptIT" />
+<ref bean="deptHR" />
+<ref bean="deptFinance" />
+</list>
+</constructor-arg>
+</bean>
+</beans>

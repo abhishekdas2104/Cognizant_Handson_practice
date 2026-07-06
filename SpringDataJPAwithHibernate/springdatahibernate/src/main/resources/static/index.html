@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏢 Employee Management System</h1>
+            <p>Spring Data JPA with Hibernate</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('employees')">Employees</button>
+            <button class="tab-button" onclick="showTab('departments')">Departments</button>
+        </div>
+
+        <!-- Employees Tab -->
+        <div id="employees-tab" class="tab-content active">
+            <div class="section">
+                <h2>📋 Employees List</h2>
+                
+                <div class="controls">
+                    <input type="text" id="employee-search" placeholder="Search employees by name..." onkeyup="searchEmployees()">
+                    <button class="btn btn-primary" onclick="showAddEmployeeModal()">+ Add Employee</button>
+                    <button class="btn btn-secondary" onclick="loadEmployees()">🔄 Refresh</button>
+                </div>
+
+                <div class="filter-section">
+                    <label>Filter by Department:</label>
+                    <select id="dept-filter" onchange="filterByDepartment()">
+                        <option value="">All Departments</option>
+                    </select>
+                </div>
+
+                <div class="table-container">
+                    <table id="employees-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Department</th>
+                                <th>Created Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employees-body">
+                            <tr>
+                                <td colspan="6" class="loading">Loading employees...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departments Tab -->
+        <div id="departments-tab" class="tab-content">
+            <div class="section">
+                <h2>🏛️ Departments List</h2>
+                
+                <div class="controls">
+                    <input type="text" id="dept-search" placeholder="Search departments by name..." onkeyup="searchDepartments()">
+                    <button class="btn btn-primary" onclick="showAddDepartmentModal()">+ Add Department</button>
+                    <button class="btn btn-secondary" onclick="loadDepartments()">🔄 Refresh</button>
+                </div>
+
+                <div class="table-container">
+                    <table id="departments-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Employee Count</th>
+                                <th>Created Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="departments-body">
+                            <tr>
+                                <td colspan="5" class="loading">Loading departments...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employee Modal -->
+    <div id="employee-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmployeeModal()">&times;</span>
+            <h2 id="employee-modal-title">Add Employee</h2>
+            <form id="employee-form" onsubmit="saveEmployee(event)">
+                <input type="hidden" id="employee-id">
+                
+                <div class="form-group">
+                    <label for="employee-name">Name *</label>
+                    <input type="text" id="employee-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employee-email">Email *</label>
+                    <input type="email" id="employee-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employee-department">Department *</label>
+                    <select id="employee-department" required>
+                        <option value="">Select Department</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeEmployeeModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Department Modal -->
+    <div id="department-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDepartmentModal()">&times;</span>
+            <h2 id="department-modal-title">Add Department</h2>
+            <form id="department-form" onsubmit="saveDepartment(event)">
+                <input type="hidden" id="department-id">
+                
+                <div class="form-group">
+                    <label for="department-name">Department Name *</label>
+                    <input type="text" id="department-name" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeDepartmentModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Employee Management System | Powered by Spring Boot & Hibernate</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

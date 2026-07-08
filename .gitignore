@@ -1,0 +1,58 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+
+# Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Package Files
+*.zip
+*.tar.gz
+*.rar
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Application specific
+application-local.properties
+application-dev.properties
+
+# OAuth2 credentials - DO NOT COMMIT
+**/application.yml
+!**/application.yml.example
+
+# Logs
+logs/
+*.log

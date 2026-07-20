@@ -56,3 +56,10 @@ application-dev.properties
 # Logs
 logs/
 *.log
+
+# Ignore all README.md files
+**/README.md
+
+# Ignore React node_modules and build directories
+**/node_modules/
+**/build/

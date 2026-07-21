@@ -1,0 +1,1 @@
+Exercise 5: Clean up and push back to remote Git. All exercises are complete!
